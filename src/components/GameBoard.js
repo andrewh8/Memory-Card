@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Card from './Card';
 
 function GameBoard(props) {
 	const [cards, setCards] = useState(['!', '@', '#', '$', '%', '^', '&'])
+
 	const shuffleCards = () => {
 		const newCards = cards.slice();
 		for (let i = 0; i < cards.length; i++) {
@@ -14,6 +15,7 @@ function GameBoard(props) {
 		setCards(newCards);
 	}
 
+	const [wasReset, setWasReset] = useState(false);
 
 	return (
 		<div className='GameBoard'>
@@ -21,7 +23,9 @@ function GameBoard(props) {
 				return (
 					<Card 
 						key={card} 
-						card={card} 
+						card={card}
+						wasReset={wasReset}
+						setWasReset={setWasReset}
 						shuffleCards={shuffleCards} 
 						setCurrentScore={props.setCurrentScore} 
 						incrementCurrentScore={props.incrementCurrentScore} 

@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { countContext } from './Context';
 
 function Card(props) {
@@ -11,16 +11,21 @@ function Card(props) {
       incrementCurrentScore();
     } else {
       restartGame();
-      setWasClicked(false);
+      props.setWasReset(true);
     }
     props.shuffleCards();
   }
 
+  useEffect(() => {
+    if (props.wasReset === true) {
+      setWasClicked(false);
+      props.setWasReset(false);
+    }
+  }, [props]);
+
   return (
     <div onClick={handleClick} className='Card'>
       {props.card}
-      ___
-      {`${wasClicked}`}
 		</div>
   )
 }
