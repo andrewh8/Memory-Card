@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/memory-card/static/js/main.068f4128.js",
-    "index.html": "/memory-card/index.html",
-    "main.068f4128.js.map": "/memory-card/static/js/main.068f4128.js.map"
+    "main.js": "/Memory-Card/static/js/main.068f4128.js",
+    "index.html": "/Memory-Card/index.html",
+    "main.068f4128.js.map": "/Memory-Card/static/js/main.068f4128.js.map"
   },
   "entrypoints": [
     "static/js/main.068f4128.js"
