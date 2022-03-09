@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 
-function Header() {
+function Header(props) {
   return (
     <div className='Header'>
-      
+      {props.currentScore}
+      {props.bestScore}
     </div>
   );
 }
