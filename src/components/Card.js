@@ -1,5 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { countContext } from './Context';
+import './Card.css';
 
 function Card(props) {
   const { incrementCurrentScore, restartGame } = useContext(countContext);
@@ -24,8 +25,7 @@ function Card(props) {
   }, [props]);
 
   return (
-    <div onClick={handleClick} className='Card'>
-      {props.card}
+    <div onClick={handleClick} id='Card' className={`${props.card}`}>
 		</div>
   )
 }

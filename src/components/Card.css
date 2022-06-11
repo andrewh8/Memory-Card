@@ -1,0 +1,45 @@
+#Card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    font-size: 40px;
+    float: left;
+}
+
+.A {
+    background-color: rgba(255, 0, 0, 0.7);
+}
+
+.Z {
+    background-color: rgba(255, 251, 0, 0.7);
+}
+
+.S {
+    background-color: rgba(43, 255, 0, 0.7);
+}
+
+.I {
+    background-color: rgba(0, 255, 221, 0.7);
+}
+
+.V {
+    background-color: rgba(0, 140, 255, 0.7);
+}
+
+.M {
+    background-color: rgba(247, 0, 255, 0.7);
+}
+
+.Q {
+    background-color: rgba(255, 0, 98, 0.7);
+}
+
+.X {
+    background-color: rgba(72, 91, 97, 0.7);
+}
+
+.K {
+    background-color: rgba(229, 161, 240, 0.7);
+}

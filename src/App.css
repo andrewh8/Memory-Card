@@ -1,0 +1,20 @@
+html, body, #root, .App {
+    height: 100%;
+    margin: 0px;
+ }
+
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: rgb(250, 253, 251);
+}
+
+.Header {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}

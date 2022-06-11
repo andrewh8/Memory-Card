@@ -1,10 +1,18 @@
 import React, { useState } from 'react';
+import './Header.css';
 
 function Header(props) {
   return (
     <div className='Header'>
-      {props.currentScore}
-      {props.bestScore}
+      <div id='title'>
+        Memory Cards
+      </div>
+      <div>
+        Current Score: {props.currentScore}
+      </div>
+      <div>
+        Best Score: {props.bestScore}
+      </div>
     </div>
   );
 }

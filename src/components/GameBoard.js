@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import Card from './Card';
+import './GameBoard.css';
 
 function GameBoard(props) {
-	const [cards, setCards] = useState(['!', '@', '#', '$', '%', '^', '&'])
+	const [cards, setCards] = useState(['A', 'Z', 'S', 'I', 'V', 'M', 'Q', 'X', 'K'])
 
 	const shuffleCards = () => {
 		const newCards = cards.slice();
